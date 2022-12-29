@@ -3,7 +3,7 @@
 const people = ["Greg", "Mary", "Devon", "James"];
 // Part I - Review About Arrays
 
-deihgkoilete people[0];
+delete people[0];
 people.splice(3, 1, 'Jason');
 console.log(people);
 people.push("diarrassouba");
@@ -98,10 +98,15 @@ const details = {
     is: 'Rudolf',
     the: 'raindeer'
  }
+ let tdetails = Object.entries(details);
 
-  
+ for (let i = 0; i < tdetails.length; i++) {
+    for (let j = 0; j < tdetails[i].length; j++) { 
+        console.log(tdetails[i][j]);
+    }
 
- console.log(`my name is ${details.is} the ${details.the}`);
+}
+
 
 //  ******************************************************************************************************
 
